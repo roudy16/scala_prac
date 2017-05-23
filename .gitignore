@@ -1,2 +1,11 @@
 *.class
 *.log
+*.swp
+
+bin/
+.settings/
+
+.classpath
+.project
+.scalastyle
+.cache-main
