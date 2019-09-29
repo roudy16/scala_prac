@@ -1,9 +1,14 @@
+*~
 *.class
 *.log
 *.swp
+*.swo
 
 bin/
 .settings/
+.idea/
+target/
+project/
 
 .classpath
 .project
