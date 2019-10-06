@@ -1,10 +1,10 @@
 package fpinscala.datastructures
 
 sealed trait PracList[+A] {
-  override def toString(): String = {
+  override def toString: String = {
     this match {
       case Nil => "EmptyList"
-      case Cons(x, xs) => PracList.foldLeft(xs, x.toString())((b, a) => b + ", " + a.toString())
+      case Cons(x, xs) => PracList.foldLeft(xs, x.toString)((b, a) => b + ", " + a.toString)
     }
   }
 }

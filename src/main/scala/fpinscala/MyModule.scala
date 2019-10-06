@@ -1,5 +1,6 @@
-import fpinscala.datastructures._
-import fpinscala.Option
+package fpinscala
+
+import fpinscala.datastructures.{Branch, Leaf, PracList}
 
 object MyModule {
   def abs(n: Int): Int =
@@ -90,6 +91,8 @@ object MyModule {
     val isis = PracList(is0, is1, is2)
     val isis1 = PracList.concat(isis)
     val is01 = PracList.append(is0, is1)
+
+    println(is01)
 
     // Setting up a Tree
     val tis0 = Leaf(0)
